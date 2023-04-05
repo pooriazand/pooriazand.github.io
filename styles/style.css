@@ -1,0 +1,391 @@
+/* Google font ------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* body ------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins, arial;
+    color: #ffffd9;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+
+/* navigation ------------------------------------------- */
+
+header {
+    height: 120px;
+    width: 100%;
+    z-index: 20;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffd9;
+}
+
+a:hover {
+    color: brown;
+}
+
+.logo {
+    height: 50px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+nav {
+    float: right;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+nav ul {
+    margin-right: 50px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row; 
+}
+
+nav li {
+    display: block;
+    margin-right: 20px;
+}
+
+/* top banner ------------------------------------------- */
+
+#mainbanner {
+    margin: 0;
+    padding: 0;
+}
+
+.top-banner {
+    background-image: url(../images/dan-dennis.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#mainbanner h1 {
+    color: #ffffd9;
+    font-weight: 300;
+    width: 100%;
+    font-size: 13vw;
+    line-height: 1em;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+/* top quote section ------------------------------------------- */
+
+#quote {
+    height: 400px;
+    width: auto;
+    position: relative;
+}
+
+#quote h2 {
+    color: #ffffd9;
+    font-family: bodoni moda, arial;
+    font-size: 2.7vw;
+    font-weight: 400;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    padding-top: 7vh; 
+}
+
+#quote-name {
+    font-size: 2vw;
+    color: #ffffd9;
+    font-weight: 100;
+}
+
+/* Gallery section ------------------------------------------- */
+
+#inside-titles {
+    font-size: 12vw;
+    padding-top: 5vh;
+    color: #ffffd9;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#gallery {
+    width: 100%;
+    z-index: 2;
+    border-bottom: solid 2px #ffffd9;
+}
+
+.gallery-container {
+    display: flex;
+    z-index: 3;
+    border-top: solid 2px #ffffd9;
+    padding: 20px 0px 20px 20px;
+    margin: 0;
+}
+
+.gallery-image {
+    width: 75vw;
+}
+
+.gallery-texts {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+}
+
+h3 {
+    font-size: 3.3vw;
+    color: #ffffd9;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.gallery-links {
+    font-size: 2.2vw;
+    font-weight: 100;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    margin-right: 2vw;
+}
+
+/* about section ------------------------------------------- */
+
+#about {
+    width: auto;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.about-text {
+    border-top: solid 2px #ffffd9;
+}
+
+.about-text h4 {
+    text-align: left;
+    font-size: 3vw;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.about-text p {
+    color: #ffffd9;
+    text-align: left;
+    width: 80%;
+    font-size: 1.9vw;
+    font-weight: 200;
+    border-left: solid 2px #ffffd9;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+/* contact section ------------------------------------------- */
+
+#contact {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.contact-text h4 {
+    text-align: center;
+    border-top: solid 2px #ffffd9;
+    font-size: 3vw;
+    font-weight: 300;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#email-button {
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    color: rgb(20, 20, 20);
+    background-color: #ffffd9;
+    width: 260px;
+    height: 80px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+/* footer ------------------------------------------- */
+
+footer {
+    border-top: solid 2px #ffffd9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* responsive design ------------------------------------------- */
+/* based on microsoft suggestion, i set up two breaking points for my responsive design; one at 640px and one at 1008px width of display ------------------------------------------- */
+
+
+/* first responsive design breaking point ------------------------------------------- */
+
+@media screen and (min-width:640px) and (max-width: 1007px){
+
+    .top-banner {
+        height: 500px;
+    }
+
+    #mainbanner h1 {
+        bottom: 3vh;
+    }
+
+    #quote {
+        height: 300px;
+    }
+
+    #quote h2 {
+        font-size: 3.1vw;
+        padding-top: 5vh; 
+    }
+
+    #inside-titles {
+        font-size: 15vw;
+        padding-top: 4vh;
+    }
+
+    .gallery-image {
+        width: 70vw;
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .gallery-links {
+        list-style-type: none;
+        position: absolute;
+        bottom: 0;
+        font-size: 2.5vw;
+    }
+
+    #about {
+        padding-bottom: 0px;
+    }
+
+    .about-text h4 {
+        font-size: 4vw;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .about-text p {
+        font-size: 2.8vw;
+        margin-bottom: 45px;
+    }
+
+    .contact-text h4 {
+        font-size: 4.8vw;
+    }
+
+    #email-button {
+        width: 35vw;
+    }
+}
+
+/* second responsive design breaking point ------------------------------------------- */
+
+@media screen and (max-width: 639px) {
+    nav ul {
+        flex-direction: column; 
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .top-banner {
+        height: 350px;
+    }
+
+    #mainbanner h1 {
+        bottom: 2vh;
+    }
+
+    #quote {
+        height: 200px;
+    }
+
+    #quote h2 {
+        font-size: 3.4vw;
+        padding-top: 4vh; 
+    }
+
+    #inside-titles {
+        font-size: 16vw;
+        padding-top: 5rvh;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        margin-left: 0;
+        padding-left: 1vw;
+    }
+
+    .gallery-image {
+        width: 98%;
+    }
+
+    h3 {
+        font-size: 4.2vw;
+        margin-left: 0px;
+        padding-top: 3vw;
+    }
+
+    .gallery-links {
+        font-size: 4vw;
+        position: relative;
+        padding-top: 3vw;
+    }
+
+    #about {
+        padding-bottom: 0px;
+    }
+
+    .about-text h4 {
+        font-size: 5vw;
+        padding-top: 0px;
+        margin-top: 20px;
+        padding-right: 10px;
+    }
+
+    .about-text p {
+        font-size: 3.6vw;
+        margin-bottom: 30px;
+    }
+
+    #email-button {
+        font-size: 20px;
+        width: 40vw;
+    }
+
+    .contact-text h4 {
+        font-size: 5vw;
+    }
+}
